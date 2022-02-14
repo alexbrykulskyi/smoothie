@@ -441,7 +441,6 @@ body {
 .blog-archive .container {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 80px;
 }
 
 .blog-archive .post {
@@ -485,6 +484,7 @@ body {
   margin-bottom: 20px;
   font-size: 24px;
   line-height: 40px;
+  display: inline-block;
 }
 
 .post h3 a {
@@ -493,12 +493,17 @@ body {
   padding:  5px 15px;
 }
 
-.post:nth-child(even) h3 a {
+.post:nth-child(even) h3  {
   background-color: #B1CFE1;
 }
 
-.post:nth-child(odd) h3 a {
+.post:nth-child(odd) h3  {
   background-color: #FEA3AC;
+}
+
+.post h3:hover {  
+   background-color: #dfeeb6;
+   transition: all 300ms ease-in-out;
 }
 
 .post p {
@@ -513,4 +518,29 @@ body {
 .info-line a {
   color: #FEA3AC;
   text-decoration: inherit;
+}
+
+.load-more {
+   margin-top: 10px;
+   margin-bottom: 80px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.load-more a {
+   color: #DFEEB6;
+   text-decoration: none;
+   padding: 20px 80px;
+   border: 3px solid #DFEEB6;
+   border-radius: 5px;
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 25px;
+}
+
+.load-more a:hover {
+   background: #DFEEB6;
+   color: #fff;
+   transition: all 300ms ease-in-out;
 }
