@@ -1,0 +1,516 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 24px;
+  color: #9a9a9a;
+}
+
+.container {
+  max-width: 1180px;
+  margin:  0 auto;
+  padding: 0 20px;
+}
+
+/*Styles for Top Header*/
+
+.header-nav {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100px;
+}
+
+.style-nav ul { 
+  display:  flex;
+  font-size: 18px;
+  line-height: 22px;
+  color:  #433840;
+}
+
+.style-nav li {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.style-nav  a {
+  color:  inherit;
+  text-decoration: none;
+}
+
+.style-nav a.active {
+  color:  #FEA3AC;
+}
+
+.top-header a:hover {
+  color:  #fea3ac;
+  transition: all 300ms ease-in-out;
+}
+
+
+/*Styles for Page Heading*/
+
+.svg-style {
+  position: relative;
+}
+
+.page-heading {
+  min-height: 400px;
+  background-sizing: cover;
+  margin-right: 50px;
+  margin-bottom: 70px;
+  margin-left: 50px;
+  display:  flex;
+  align-items:  center;
+  justify-content:  center;
+  flex-direction: column;
+  background: transparent url("../img/about-header.jpg") center center no-repeat;
+}
+
+.svg-style::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 130px;
+  background:  url("../img/top.svg");
+  top: 0;
+  left: 0;
+}
+
+.svg-style::after {
+  position:  absolute;
+  content: "";
+  width: 100%;
+  height: 110px;
+  background:  url("../img/bottom.svg");
+  bottom: 0;
+  left: 0;
+}
+
+.header-title {
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 62px;
+  color:  #fff;
+}
+
+.subtitle {
+  font-family: 'Waiting for the Sunrise';
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 50px;
+  color:  #ffffff;
+}
+
+
+/*Styles for About Box*/
+
+.about-box {
+  margin-bottom: 60px;
+}
+
+.about-box .container {
+  display:  flex;
+  align-items:  center;
+}
+
+.item-data:first-child {
+  padding-left: 25px;
+  padding-right: 45px;
+}
+
+.item-data:last-child {
+  padding-right: 25px;
+  padding-left: 45px;
+}
+
+.item-data article {
+  margin-bottom: 80px;
+}
+
+.item-data article:last-child {
+  margin-bottom: 0;
+}
+
+.about-box h3 {
+  font-size: 30px;
+  line-height: 37px;
+  font-weight: bold;
+  color: #433840;
+  margin-bottom: 12px;
+}
+
+
+/*Styles for Infografic*/
+
+.infografic {
+  margin-right: 50px;
+  margin-bottom: 60px;
+  margin-left: 50px;
+  background: #fea3ac;
+  min-height: 600px;
+}
+
+.infografic .container {
+  padding-top: 170px;
+  padding-bottom: 170px;
+}
+
+.infografic .item-block {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 220px;
+
+}
+
+.icon {
+  display:  flex;
+  width: 135px;
+  height: 135px;
+  align-items:  center;
+  justify-content: center;
+  margin:  0 auto;
+}
+
+.item-info {
+  width: 25%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.infografic span {
+  display: block;
+  font-family: 'Waiting for the Sunrise';
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 99px;
+  color: #dfeeb6;
+}
+
+.infografic h4 {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+  color: #ffffff;
+}
+
+
+
+
+/*Styles for Team Box */
+
+.box-title {
+  margin-bottom: 110px;
+}
+
+.box-title .header-title {
+  text-align: center;
+  color:  #000000;
+}
+
+.box-title .subtitle {
+  display: block;
+  text-align: center;
+  color: #f7a1a8;
+  margin-bottom: 60px;
+}
+
+.team-list {
+  display:  flex;
+  flex-wrap:  wrap;
+  justify-content:  space-between;
+}
+
+.team-member {
+  display:  flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #C9E3F4;
+  width:  calc(50% - 201.5px);
+  margin-bottom: 40px;
+  margin-left: 190px;
+}
+
+.team-member:nth-child(3),
+.team-member:nth-child(4) {
+  margin-left: 0;
+  margin-right: 190px;
+}
+
+.team-member:nth-child(3) .image,
+.team-member:nth-child(4) .image {
+  order: 2;
+}
+
+.team-member:nth-child(3) .image img,
+.team-member:nth-child(4) .image img {
+  margin-left: 0;
+  margin-right: -190px;
+}
+
+.team-member:nth-child(3) .data,
+.team-member:nth-child(4) .data {
+ order:  1;
+ margin-left: 0;
+ margin-right: 17px;
+ text-align: right;
+}
+
+.team-member:nth-child(2),
+.team-member:nth-child(3){
+  background: #DFEEB6;
+}
+
+
+.image img {
+  border-radius: 100%;
+  margin-left: -190px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+
+.data {
+  margin-left: 17px;
+}
+
+.name {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 37.5px;
+  display: block;
+}
+
+.data .post {
+  color: #433840;
+  font-size: 20px;
+}
+
+.data p {
+  color: #433840;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.social {
+  letter-spacing: 10px;
+}
+
+/* Footer */
+
+.top-footer {
+  background: url("../img/bg-footer.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.top-footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  color:  #fff;
+  width: 33.3%;
+  min-height: 320px;
+  align-content: flex-start;
+}
+
+.footer-item h5 {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 37px;
+  color: #FFFFFF;
+  margin-bottom: 25px;
+}
+
+.footer-item.openning span {
+  color: #DFEEB6;
+}
+
+.footer-item.contact-info b {
+  position: relative;
+  font-weight:  bold;
+}
+
+.footer-item.contact-info b::before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  background-image: url("../img/telephone.png");
+  background-size: 100%;
+  top: 3px;
+  left: -20px;
+}
+
+.footer-item.contact-info a {
+  position: relative;
+  color: inherit; 
+}
+
+.footer-item.contact-info a::before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  background-image: url("../img/arrow-right1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 7px;
+  left: -20px;
+}
+
+.footer-item.contact-info span {
+  position: relative;
+}
+
+.footer-item.contact-info span::before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  background-image: url("../img/location.png");
+  background-repeat: no-repeat;
+  background-size: 70%;
+  top: 5px;
+  left: -20px; 
+}
+
+.footer-item.instagram-feed ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.footer-item.instagram-feed li {
+  width: 30%;
+  margin-bottom: 26px;
+  margin-right: 5%;
+}
+
+.footer-item.instagram-feed li:nth-child(3n) {
+	margin-right: 0;
+}
+
+.footer-item.instagram-feed img {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer-bottom {
+  background: #433840;
+}
+
+.footer-bottom .container {
+  display: flex;
+  line-height: 35px;
+  color: #fff;
+  height: 60px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social-footer {
+  letter-spacing: 10px;
+}
+
+.social-footer li {
+  display: inline-block;
+}
+
+
+
+
+/* BLOG PAGE */
+
+.page-heading.blog-page {
+  background: transparent url("../img/blog-bg.jpg") center center no-repeat;
+  font-weight: 500;
+}
+
+.blog-archive .container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 80px;
+}
+
+.blog-archive .post {
+  width: 32%;
+  margin-right: 2%;
+}
+
+.blog-archive .post:nth-child(3n) {
+	margin-right: 0;
+}
+
+.thumbnail {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.thumbnail img {
+  border-radius: 5px;
+  max-width: 100%;
+  height: auto;
+}
+
+.thumbnail span {
+  display: block;
+  position: absolute;
+  bottom: 20px ;
+  left: 20px;
+  color: #fff;
+  background-color: #DFEEB6;
+  padding: 8px 20px;
+}
+
+.post {
+  margin-bottom: 50px;
+  font-size: 15px;
+  line-height: 25px;
+  color: #C4C4C4;
+}
+
+.post h3 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 40px;
+}
+
+.post h3 a {
+  color: #fff;
+  text-decoration:  none;
+  padding:  5px 15px;
+}
+
+.post:nth-child(even) h3 a {
+  background-color: #B1CFE1;
+}
+
+.post:nth-child(odd) h3 a {
+  background-color: #FEA3AC;
+}
+
+.post p {
+  margin-bottom: 15px;
+}
+
+.info-line {
+  color: #433840;
+  font-weight: 500;
+}
+
+.info-line a {
+  color: #FEA3AC;
+  text-decoration: inherit;
+}
