@@ -76,6 +76,7 @@ body {
   background:  url("../img/top.svg");
   top: 0;
   left: 0;
+  z-index: 9;
 }
 
 .svg-style::after {
@@ -86,6 +87,7 @@ body {
   background:  url("../img/bottom.svg");
   bottom: 0;
   left: 0;
+  z-index: 9;
 }
 
 .header-title {
@@ -677,10 +679,6 @@ body {
    margin-left: 25px;
 }
 
-
-
-
-
 .pricing-tables {
    margin: 50px 0;
    text-align: center;
@@ -778,4 +776,124 @@ body {
 .shop-page {
    background: url("../img/shop-bg.jpg") center center no-repeat;
    background-size: cover;
+}
+
+.shop {
+   padding-bottom: 70px;
+}
+
+.shop-items {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.shop-item {
+   width: 23.728%;
+   margin-right: 1.696%;
+   margin-bottom: 25px;
+   text-align: center;
+}
+
+.shop-item h3 {
+   margin-bottom: 5px;
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 22px;
+   color: #433840;
+}
+
+.shop-item h3 a {
+   text-decoration: none;
+   color: inherit;
+}
+
+.shop-item h3 a:hover {
+   opacity: 0.7;
+   transition: all 300ms ease-in-out;
+}
+
+.shop-item span {
+   font-family: Waiting for the Sunrise;
+   font-weight: 300;
+   font-size: 30px;
+   line-height: 50px;
+   color: #FEA3AC;
+}
+
+.shop-item img {
+   max-width: 100%;
+   height: auto;
+}
+
+.shop-item:nth-child(4n) {
+   margin-right: 0;
+}
+
+.shop-image {
+   margin-bottom: 25px;
+   position: relative;
+   overflow: hidden;
+   transition: all 300ms ease-in-out;
+}
+
+.shop-image:hover .add-to-card {
+   top: 0;
+   transition: all 300ms ease-in-out;
+}
+
+.shop-image img {
+   border-radius: 5px;
+}
+
+.add-to-card {
+   display: flex;
+   position: absolute;
+   align-items: center;
+   justify-content: center;
+   right: 0;
+   top: 150%;
+   bottom: 0;
+   left: 0;
+
+}
+
+.add-to-card a {
+   display: inline-block;
+   color: #fff;
+   font-weight: 500;
+   line-height: 19px;
+   letter-spacing: 3px;
+   background: #C9E3F4;
+   padding: 20px 25px;
+   text-decoration: none;
+   border-radius: 5px;
+}
+
+.add-to-card a:hover {
+   background-color: #DFEEB6;
+}
+
+/*HOME PAGE*/
+
+.home-slider {
+   margin-right: 50px;
+   margin-left: 50px;
+}
+
+.slide figure img {
+   background-size: cover;
+   max-width: 100%;
+   height: auto;
+}
+
+.slide figure {
+   position: relative;
+}
+
+.slide figure figcaption  {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
 }
