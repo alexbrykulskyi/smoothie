@@ -11,7 +11,7 @@ body {
   max-width: 1180px;
   margin:  0 auto;
   padding: 0 20px;
-}
+  }
 
 /*Styles for Top Header*/
 
@@ -438,14 +438,18 @@ body {
   font-weight: 500;
 }
 
-.blog-archive .container {
+.blog-archive .article-items {
   display: flex;
   flex-wrap: wrap;
 }
 
-.blog-archive .post {
+.article-items .post {
   width: 32%;
   margin-right: 2%;
+  margin-bottom: 50px;
+  font-size: 15px;
+  line-height: 25px;
+  color: #C4C4C4;
 }
 
 .blog-archive .post:nth-child(3n) {
@@ -471,13 +475,6 @@ body {
   color: #fff;
   background-color: #DFEEB6;
   padding: 8px 20px;
-}
-
-.post {
-  margin-bottom: 50px;
-  font-size: 15px;
-  line-height: 25px;
-  color: #C4C4C4;
 }
 
 .post h3 {
@@ -779,7 +776,7 @@ body {
 }
 
 .shop {
-   padding-bottom: 70px;
+   margin-bottom: 70px;
 }
 
 .shop-items {
@@ -875,9 +872,19 @@ body {
 
 /*HOME PAGE*/
 
+
+
+/*home-slider*/
+
 .home-slider {
    margin-right: 50px;
+   margin-bottom: 90px;
    margin-left: 50px;
+   text-align: center;
+}
+
+.slide figure {
+   position: relative;
 }
 
 .slide figure img {
@@ -886,14 +893,195 @@ body {
    height: auto;
 }
 
-.slide figure {
-   position: relative;
-}
-
 .slide figure figcaption  {
    position: absolute;
    top: 0;
    left: 0;
    width: 100%;
    height: 100%;
+}
+
+.home-slider .title {
+   font-family: Waiting for the Sunrise;
+   font-style: normal;
+   font-weight: 300;
+   position: absolute;
+}
+
+.home-slider .title-one {
+   font-size: 170px;
+   color: #F7A1A8;
+   top: 30%;
+   right: 19%;
+}
+
+.home-slider .title-two {
+   font-size: 260px;
+   letter-spacing: 10px;
+   color: #FFFFFF;
+   bottom: 37%;
+   left: 10%;
+
+}
+
+.home-slider .title-three {
+   font-size: 60px;
+   letter-spacing: 10px;
+   color: #433840;
+   bottom: 26%;
+   left: 31%;
+}
+
+/*about-box*/
+
+.about-box.home-box {
+   margin-bottom: 150px;
+   background: url("../img/home-about-box.png") center center no-repeat;
+   background-size: cover;
+}
+
+
+/*shop home-shop*/
+
+.shop.home-shop {
+   margin-bottom: 140px;
+}
+
+.header-title.shop-title,
+.header-title.blog-title {
+   color: #433840;
+   text-align: center;
+}
+
+.subtitle.shop-subtitle,
+.subtitle.blog-subtitle {
+   display: block;
+   color: #433840;
+   text-align: center;
+   margin-bottom: 70px;
+}
+
+.subtitle.blog-subtitle {
+   margin-bottom: 40px;
+}
+
+
+
+/*Subscribe*/
+
+.subscribe {
+   background-color: #DFEEB6;
+   margin-right: 50px;
+   margin-left: 50px;
+   padding-bottom: 110px;
+   margin-bottom: 60px;
+}
+
+.subscribe .container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.subscribe .header-title {
+   line-height: 40px;
+}
+
+.subscribe .subtitle {
+   display: block;
+   margin-bottom: 20px;
+   color: #F7A1A8;
+}
+
+.subscribe .thumbnail {
+   margin-top: -100px;
+}
+
+.col-right,
+.col-left {
+   width: 48%;
+}
+
+.col-left {
+   margin-right: 4%;
+   z-index: 9;
+}
+
+.col-right {
+   padding-top: 100px;
+}
+
+form.subscribe {
+   margin: 0;
+   padding: 0;
+   display: flex;
+   align-items: center;
+}
+
+form.subscribe .email {
+   width: 100%;
+   height: 60px;
+   line-height: 54;
+   padding-left: 18px;
+   font-family: Quicksand;
+   font-style: normal;
+   background: #FFFFFF;
+   border: 3px solid #FEE9EF;
+   border-radius: 5px;
+   font-size: 18px;
+   line-height: 22px;
+   color: #9A9A9A;
+}
+
+form.subscribe .submit {
+   padding: 0 45px;
+   height: 60px;
+   border: 0;
+   border-radius: 5px;
+   margin-left: 25px;
+   font-weight: bold;
+   font-size: 20px;
+   line-height: 25px;
+   background-color: #FEA3AC;
+   font-style: normal;
+   color: #fff;
+}
+
+.subtitle.blog-subtitle {
+   display: block;
+   margin-bottom: 40px;
+}
+
+.blog-archive.home-blog .header-title {
+   color: #433840;
+   text-align: center;
+}
+
+.blog-archive.home-blog .subtitle {
+   color: #F7A1A8;
+   display: block;
+   text-align: center;
+   margin-bottom: 40px;
+}
+
+
+
+/*our menu*/
+
+.our-menu.home-menu {
+   margin-bottom: 35px;
+}
+
+
+/*Testmonials*/
+
+.testimonials-title {
+   color: #433840;
+   text-align: center;
+}
+
+.testimonials-subtitle {
+   display: block;
+   color: #F7A1A8;
+   text-align: center;
 }
