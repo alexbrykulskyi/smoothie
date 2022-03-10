@@ -5,6 +5,26 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:300,400,700|Waiting+for+the+Sunrise&display=swap">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+  <script src="js/slick.min.js"></script>
+  <script>
+  	$(document).ready(function(){
+  	/*Testimonials Slider*/
+  $('.testimonials-slider').slick({
+    arrows: false,
+    dots: true,
+  });
+  
+  /*Top Slider*/
+  $('.home-slider').slick({
+    prevArrow: '<button type="button" class="slick-prev"></button>',
+    nextArrow: '<button type="button" class="slick-next"></button>',
+  });
+});
+  </script>
 	<title>Smoothie</title>
 	</head>
 
@@ -38,6 +58,16 @@
 		<div class="slide">
 			<figure>
 				<img src="img/slider1.jpg" alt="">
+				<figcaption>
+					<div class="title title-one">Fresh</div>
+					<div class="title title-two">Detox</div>
+					<div class="title title-three">solution</div>
+				</figcaption>
+			</figure>
+		</div>
+		<div class="slide">
+			<figure>
+				<img src="img/slider2.jpg" alt="">
 				<figcaption>
 					<div class="title title-one">Fresh</div>
 					<div class="title title-two">Detox</div>
@@ -281,6 +311,23 @@
 		<div class="container">
 			<h2 class="header-title testimonials-title">Testimonials</h2>
 			<span class="subtitle testimonials-subtitle">What other say about us</span>
+			<div class="testimonials-slider">
+				<div class="testy-items">
+					<h5 class="author-name">Ava Addams 1</h5>
+					<p class="author-description">Lelit. Etiam eget feugiat ante. Mauris vestibulum turpis purus, vulputate vehicula magna aliquet et. Etiam in arcu ut tellus fringilla blandit.</p>
+					<a href="#" class="author-link" target="blank">More details</a>
+				</div>
+				<div class="testy-items">
+					<h5 class="author-name">Ava Addams 2</h5>
+					<p class="author-description">Lelit. Etiam eget feugiat ante. Mauris vestibulum turpis purus, vulputate vehicula magna aliquet et. Etiam in arcu ut tellus fringilla blandit.</p>
+					<a href="#" class="author-link" target="blank">More details</a>
+				</div>
+				<div class="testy-items">
+					<h5 class="author-name">Ava Addams 3</h5>
+					<p class="author-description">Lelit. Etiam eget feugiat ante. Mauris vestibulum turpis purus, vulputate vehicula magna aliquet et. Etiam in arcu ut tellus fringilla blandit.</p>
+					<a href="#" class="author-link" target="blank">More details</a>
+				</div>
+			</div>
 		</div>
 	</div>	
 	
