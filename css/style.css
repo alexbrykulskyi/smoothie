@@ -317,6 +317,12 @@ body {
 }
 
 .footer-item {
+  color:  #fff;
+  width: 33.3%;
+}
+
+.openning,
+.instagram-feed {
   display: flex;
   flex-direction: column;
   color:  #fff;
@@ -336,53 +342,19 @@ body {
   color: #DFEEB6;
 }
 
-.footer-item.contact-info b {
-  position: relative;
-  font-weight:  bold;
+.footer-item.contact-info img {
+   width: 20px;
+   height: 20px;
 }
 
-.footer-item.contact-info b::before {
-  content: '';
-  width: 15px;
-  height: 15px;
-  position: absolute;
-  background-image: url("../img/telephone.png");
-  background-size: 100%;
-  top: 3px;
-  left: -20px;
+.footer-item.contact-info strong {
+   font-weight: bold;
 }
 
 .footer-item.contact-info a {
   position: relative;
   color: inherit; 
-}
-
-.footer-item.contact-info a::before {
-  content: '';
-  width: 15px;
-  height: 15px;
-  position: absolute;
-  background-image: url("../img/arrow-right1.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  top: 7px;
-  left: -20px;
-}
-
-.footer-item.contact-info span {
-  position: relative;
-}
-
-.footer-item.contact-info span::before {
-  content: '';
-  width: 15px;
-  height: 15px;
-  position: absolute;
-  background-image: url("../img/location.png");
-  background-repeat: no-repeat;
-  background-size: 70%;
-  top: 5px;
-  left: -20px; 
+  text-decoration: none;
 }
 
 .footer-item.instagram-feed ul {
@@ -392,9 +364,9 @@ body {
 }
 
 .footer-item.instagram-feed li {
-  width: 30%;
-  margin-bottom: 26px;
-  margin-right: 5%;
+   width: 32%;
+  margin-bottom: 8%;
+  margin-right: 2%;
 }
 
 .footer-item.instagram-feed li:nth-child(3n) {
@@ -1184,6 +1156,75 @@ form.subscribe .submit {
    background: #FEA3AC;
 }
 
+nav.mobile {
+   display: none;
+}
+
+
+
+/*CONTACT PAGE*/
+
+.page-heading.contact-page {
+   background: url("../img/contact-bg.jpg") center center no-repeat;
+   background-size: cover;
+}
+
+.contact-form {
+   padding-bottom: 90px;
+}
+
+.contact-form .contact-items {
+   display: flex;
+}
+
+.contact-form .contact-item {
+   width: 50%;
+}
+
+.contact-form .contact-item:first-child {
+   padding-right: 30px;
+}
+
+.contact-form .contact-item:last-child {
+   padding-left: 30px;
+   padding-right: 10px;
+}
+
+.contact-form .contact-item h3 {
+   margin-bottom: 20px;
+   color: #433840;
+   font-weight: 500;
+   font-size: 30px;
+   line-height: 25px;
+}
+
+.contact-form .contact-item a {
+   display: inline-block;
+   background-color: #FEA3AC;
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 25px;
+   text-decoration: none;
+   color: #fff;
+   padding: 18px 70px;
+   border-radius: 5px;
+}
+
+.contact-item input,
+ textarea {
+   font-family: 'Quicksand';
+   font-style: normal;
+   width: 100%;
+   margin-bottom: 25px;
+   border: 3px solid #FEE9EF;
+   border-radius: 5px;
+   font-weight: 100;
+   font-size: 18px;
+   line-height: 22px;
+   color: #9A9A9A;
+   padding: 20px 0 20px 20px ;
+}
+
 
 
 /*Mobile Styles*/
@@ -1192,6 +1233,7 @@ form.subscribe .submit {
    .top-footer .container {
       display: flex;
       flex-wrap: wrap;
+      padding-bottom: 0;
    }
 
    .top-footer .footer-item {
@@ -1199,3 +1241,60 @@ form.subscribe .submit {
       text-align: center;
       margin-bottom: 40px;
    }
+
+   .top-footer .instagram-feed {
+      margin-bottom: 0
+   }
+
+   .top-footer .instagram-feed ul {
+      margin: 0 auto;
+      width: 60%;
+   }
+
+   .shop .shop-item {
+      width: 49%;
+      margin-right: 2%;
+   }
+
+   .shop .shop-item:nth-child(2n) {
+      margin-right: 0
+   }
+
+   .left-nav,
+   .right-nav {
+      display: none;
+   }
+
+   nav.mobile {
+      display: block;
+      text-align: center;
+   }
+
+   nav.mobile a {
+      color: #fea3ac;
+      text-decoration: none;
+   }
+
+   .header-nav {
+      flex-direction: column;
+      height: unset;
+   }
+
+   .logo {
+      margin-bottom: 20px
+   }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+   .page-heading {
+      margin-left: 0;
+      margin-right: 0;
+   }
+
+   .shop .shop-item {
+      width: 100%;
+      margin-right: 0;
+   }
+}
